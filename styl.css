@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,500&display=swap");
+
+:root {
+  --oranfg: #ff7a00;
+}
+* {
+  font-family: "Exo 2", sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.heder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+  padding: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.heder img {
+  height: 7rem;
+}
+.heder nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.heder nav ul li {
+  margin: 0 1.5rem;
+}
+.heder nav ul a {
+  color: #666;
+  font-size: 2rem;
+}
+.heder nav ul a:hover {
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ff7b0065;
+}
+.heder .fa-bars {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #666;
+  display: none;
+}
+.fa-times {
+  transform: rotate(180deg) translateX(0px);
+  transition: 0.7s;
+  -webkit-transform: rotate(180deg) translateX(0px);
+  -moz-transform: rotate(180deg) translateX(0px);
+  -ms-transform: rotate(180deg) translateX(0px);
+  -o-transform: rotate(180deg) translateX(0px);
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+}
+.home .horo {
+  min-height: 60vh;
+  background: url(img/living.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+
+  align-items: center;
+}
+.home .horo .text1 {
+  font-size: 4rem;
+  width: 35rem;
+  background: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  opacity: 0.8;
+}
+.home .horo .text2 {
+  font-size: 2.5rem;
+  width: 30rem;
+  background: var(--oranfg);
+  padding: 1rem 2rem;
+  text-align: center;
+  opacity: 0.8;
+  margin-top: 1rem;
+  color: #fff;
+}
+.home .cunting {
+  min-height: 40vh;
+  display: flex;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.home .cunting .box {
+  margin: 2rem 4rem;
+  text-align: center;
+}
+.home .cunting .box .count {
+  font-size: 6rem;
+  color: #444;
+}
+.home .cunting .box h3 {
+  font-size: 2rem;
+  color: var(--oranfg);
+}
+.about {
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+.hadeing {
+  font-size: 3.5rem;
+  text-align: center;
+  letter-spacing: 1.1rem;
+  color: #444;
+  margin: 2rem 0;
+  padding-top: 6rem;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--oranfg);
+  -moz-text-decoration-style: solid;
+  -moz-text-decoration-color: var(--oranfg);
+  text-underline-offset: -1.4rem;
+}
+.about .imge {
+  padding: 2rem;
+}
+.about img {
+  padding: 2rem;
+  height: 45rem;
+  object-fit: cover;
+  box-shadow: 2.5rem 2.4rem 0 1rem var(--oranfg);
+}
+.about .info {
+  padding: 2rem;
+  margin-top: 3rem;
+}
+.about .info h2 {
+  color: var(--oranfg);
+  font-size: 3rem;
+}
+.about .info p {
+  font-size: 1.4rem;
+  color: #444;
+  margin: 2rem 0;
+  padding-left: 5px;
+}
+
+.about .info .icon a {
+  font-size: 2rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background-color: rgba(3, 49, 49, 0.795);
+  color: #fff;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.about .info .icon a:hover {
+  background-color: var(--oranfg);
+  transform: translatey(3px);
+  -webkit-transform: translatey(3px);
+  -moz-transform: translatey(3px);
+  -ms-transform: translatey(3px);
+  -o-transform: translatey(3px);
+}
+.servise {
+  min-height: 100vh;
+}
+.servise .box-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.servise .box-container .box {
+  height: 25rem;
+  width: 25rem;
+  box-shadow: 0 2rem 0.5rem rgba(0, 0, 0, 0.3);
+  border-left: 0.5rem solid var(--oranfg);
+  border-right: 0.5rem solid var(--oranfg);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  text-align: center;
+  padding-top: 6rem;
+  margin: 2rem 3rem;
+}
+.btn {
+  border: none;
+  width: 70px;
+  height: 50px;
+  text-align: center;
+  border-radius: 20%;
+  background: var(--oranfg);
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  -ms-border-radius: 20%;
+  -o-border-radius: 20%;
+}
+.btn a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+}
+.servise .box-container .box:hover {
+  transform: scalex(0.8);
+  -webkit-transform: scalex(0.8);
+  -moz-transform: scalex(0.8);
+  -ms-transform: scalex(0.8);
+  -o-transform: scalex(0.8);
+  box-shadow: 0 0.5rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+.servise .box-container .box .fas {
+  color: var(--oranfg);
+  font-size: 5rem;
+}
+.project {
+  min-height: 100vh;
+  background: #333;
+}
+.project .hadeing {
+  color: #fff;
+}
+.project .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.project .box-container .box {
+  height: 20rem;
+  width: 30rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem #000;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  overflow: hidden;
+}
+.project .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.project .box-container .box img:hover {
+  transform: scale(1.4) rotateY(-5deg);
+  -webkit-transform: scale(1.4) rotateY(-5deg);
+  -moz-transform: scale(1.4) rotateY(-5deg);
+  -ms-transform: scale(1.4) rotateY(-5deg);
+  -o-transform: scale(1.4) rotateY(-5deg);
+}
+.contact {
+  height: 110vh;
+  overflow: hidden;
+}
+.contact-box-contanar {
+  width: 93%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-box-contanar .contact-box {
+  height: 15rem;
+  flex: 1 0 30rem;
+  margin: 2em;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  text-align: center;
+  padding-top: 4rem;
+}
+.contact-box-contanar .contact-box i {
+  color: var(--oranfg);
+  font-size: 4rem;
+}
+.contact-box-contanar .contact-box h3 {
+  font-size: 1.8rem;
+  color: #444;
+  margin: 2rem 0;
+}
+.contact-box-contanar .contact-box a {
+  font-size: 1.8rem;
+  color: #444;
+}
+.contact .form-con {
+  width: 90%;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem 3rem;
+}
+.contact .form-con form input,
+textarea {
+  height: 4.5rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+  margin: 2rem 0;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+.contact .form-con form .inputbox {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .form-con form input[type="text"] {
+  width: 49%;
+}
+.contact .form-con form input[type="email"] {
+  width: 100%;
+}
+.contact .form-con form textarea {
+  width: 100%;
+  height: 20rem;
+  padding: 1rem;
+  resize: none;
+  overflow: auto;
+}
+.contact .form-con form input[type="submit"] {
+  width: 15rem;
+  font-size: 2rem;
+  color: #fff;
+  background-color: var(--oranfg);
+}
+.contact .form-con form input[type="submit"]:hover {
+  opacity: 0.7;
+  transform: scaleY(1.1);
+  -webkit-transform: scaleY(1.1);
+  -moz-transform: scaleY(1.1);
+  -ms-transform: scaleY(1.1);
+  -o-transform: scaleY(1.1);
+}
+.footer {
+  background-color: #333;
+  text-align: center;
+}
+.footer .rw {
+  width: 100%;
+  margin-left: 0;
+  padding: 1rem;
+}
+.footer .rw .col-md-3 {
+  margin: 1rem 0;
+}
+.footer h2 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.footer p {
+  font-size: 1.4rem;
+  color: #ccc;
+}
+.footer .list {
+  display: flex;
+  flex-flow: column;
+}
+.footer .list a {
+  color: #ccc;
+  font-size: 1.7rem;
+}
+.footer .leter p {
+  font-size: 2rem;
+}
+.footer input[type="email"] {
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0 1rem;
+  color: #fff;
+  height: 3rem;
+  width: 100%;
+  border: 0.1rem solid #fff;
+  font-size: 1.5rem;
+}
+.footer .logo {
+  color: var(--oranfg);
+  font-size: 4rem;
+  opacity: 0.7;
+}
+.footer .leter input[type="submit"] {
+  outline: none;
+  border: none;
+  background: #fff;
+  margin: 1rem 0;
+  width: 10rem;
+
+  font-size: 1.6rem;
+}
+.footer .leter input[type="submit"]:hover {
+  background-color: var(--oranfg);
+  color: #fff;
+}
+.footer .crdt {
+  width: 100%;
+  text-align: center;
+  color: #ffff;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  margin-bottom: 0;
+  border-top: 0.1rem solid #aaa;
+  letter-spacing: 0.2rem;
+}
+.footer .crdt span {
+  color: var(--oranfg);
+}
+@media (max-width: 780px) {
+  html {
+    font-size: 50%;
+  }
+  .heder .fa-bars {
+    display: block;
+  }
+  .heder nav {
+    position: fixed;
+    top: 6rem;
+    right: -120%;
+    width: 100vw;
+    height: calc(100vh - 6rem);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+  }
+  .heder nav ul {
+    height: 100%;
+    width: 33rem;
+    background-color: #fff;
+    justify-content: center;
+    float: right;
+    flex-flow: column;
+  }
+  .heder nav ul li {
+    margin: 1rem 0;
+  }
+  .heder nav ul li a {
+    display: block;
+    padding: 1rem 0;
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    width: 25rem;
+    border-radius: 5rem;
+    text-align: center;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+  }
+  .heder nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  .heder .nav-toggle {
+    right: 0;
+  }
+  .about .info .icon {
+    padding: 5px;
+  }
+  .about .info p {
+    padding-left: 5px;
+  }
+  .contact {
+    height: 120vh;
+    overflow: hidden;
+  }
+}
+@media (max-width: 400px) {
+  .home .horo .text1 {
+    font-size: 3.2rem;
+    width: 35rem;
+  }
+  .home .horo .text2 {
+    font-size: 2.5rem;
+    width: 30rem;
+  }
+}
